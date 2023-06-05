@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Space+Mono&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(229, 229, 229);
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+/* position navigation and background video */
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 99;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: rgb(229, 229, 229);
+    color: rgb(163, 23, 30);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: white;
+ 
+  }
+
+header {
+    margin: 0;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    font-size: 0;
+}
+
+header #topVideoBox {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    margin: 0;
+}
+
+/* video to be background */
+#topVideo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* navigation bar */
+nav {
+    /* position:fixed; */
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100px;
+    float: left;
+    position: sticky;
+}
+
+.headerLeft {
+    width: 25%;
+    height: 100%; 
+    float: left;
+}
+
+.navLeftLst{
+    height: 100%;
+    width: 100%;
+}
+
+.navLeftLst {
+    height: 100%;
+    width: 100%;
+}
+
+nav img {
+    width: 80%;
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+nav img:hover{
+    background-color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0)
+}
+
+.headerRight {
+    width: 60%;
+    height: 100%;
+    float: right;
+    padding-top: 1.5rem ;
+   
+
+}
+
+.navRightLst {
+    float: left;
+   
+    
+}
+nav li a {
+    /* color: white; */
+    color: rgb(163, 23, 30);
+    font-weight: bolder;
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding:1.5rem;
+    margin-left: 0.3rem; 
+    text-shadow: 1px 1px 3px rgb(247, 246, 246)
+}
+
+.navRightLst a:hover {
+    background-color: white;
+    color: rgb(163, 23, 30);
+    /* padding-top: 5rem; */
+}
+
+/* About Us navigation */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 2px 0 5px 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(163, 23, 30);
+    width: 80%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    font-size: 0.5rem;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(62, 42, 43);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0;
+    padding-bottom: 3rem;
+    /* height: 20rem; */
+    width: 100%;
+
+}
+
+footer {
+    /* height: 15rem; */
+    height: fit-content;
+}
+
+.footerLeft,
+.footerRight {
+    width: 100%;
+    padding-left: 5rem;
+}
+
+.footerLeft {
+    border-right: 2px solid gray;
+    padding-right: 1.5rem;
+
+}
+
+.footer-lines {
+    color: gray;
+    font-weight: bold;
+}
+
+footer img {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 2em;
+    border-radius: 50%;
+}
+
+footer h2 {
+    padding: 1.5rem 0;
+    font-size: 1.5vw;
+}
+
+footer p, footer address  {
+    line-height: 1.5rem;
+    font-size: 1vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/*----------------------------mobile screen---------------------*/
+@media only screen and (max-width: 760px) {
+
+   
+    header {
+        height: 30rem;
+    }
+
+    /* video to be background */
+    header #topVideoBox {
+        width: 100%;
+        object-fit: fill;
+    }
+
+    /* navigation bar */
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .headerRight {
+        margin-left: 10rem;
+    }
+
+    nav .headerRight li {
+        list-style-type: none;
+    }
+
+    nav img {
+        width: 10rem;
+    }
+
+    nav li a {
+        color: rgb(163, 23, 30);
+        font-weight: bolder;
+        font-size: 2vw;
+        text-decoration: none;
+        padding: 0 0.8rem;
+    }
+
+    /* About Us navigation */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        padding: 2px 0 5px 0;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(163, 23, 30);
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        font-size: 0.5rem;
+        text-align: left;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    /*----------footer----------*/
+
+    footer {
+        /* height: 15rem; */
+        height: fit-content;
+    }
+
+    .footerLeft,
+    .footerRight {
+        width: 100%;
+        padding-left: 3rem;
+    }
+
+    .footerLeft {
+        border-right: 2px solid gray;
+    }
+
+    .footer-lines {
+        color: gray;
+    }
+
+    footer img {
+        height: auto;
+        width: 1.5rem;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+    }
+
+    footer h2 {
+        /* text-align: center; */
+        padding: 1.5rem 0;
+        font-size: 0.8rem;
+    }
+
+    footer p, footer address {
+        line-height: 1rem;
+        font-size: 0.5rem;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer {
+        margin-bottom:0;
+    }
+}
+
+/*----------------------------mobile screen---------------------*/
+@media only screen and (max-width: 500px) {
+
+
+    .headerRight {
+        display:flex;
+        flex-direction: column;
+        gap:0.2rem;
+        margin-left: 2rem;
+        width: 30%;
+
+    }
+
+    .headerRight li {
+        width: 100%;
+    }
+}

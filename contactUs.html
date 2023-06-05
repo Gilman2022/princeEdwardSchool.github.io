@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us--PES</title>
+    <link rel="icon" type="image/x-icon" href="/assets/cropped-pe-crest-icon.png">
+    <link rel="stylesheet" href="stylesheets.css/reset.css">
+    <link rel="stylesheet" href="stylesheets.css/main.css">
+    <link rel="stylesheet" href="stylesheets.css/contactUs.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
+        <nav>
+          <ul class="headerLeft">
+            <li class="navLeftLst">
+              <a href="homepage.html"><img src="assets/schoolNameImg.png" alt="school logo link to homepage"></a>
+            </li>
+          </ul>
+    
+          <ul class="headerRight">
+            <li class="navRightLst"><a href="index.html#events">EVENTS</a></li>
+            <li class="navRightLst"><a href="index.html#academics">ACADEMICS</a></li>
+            <li class="navRightLst"><a href="index.html#sports">SPORTS</a></li>
+            <li class="navRightLst"><a href="portal.html">PORTAL</a></li>
+            <li class="navRightLst dropdown">
+              <a class="dropbtn" href="aboutUs.html">ABOUT US</a>
+              <ul class="dropdown-content">
+                <li>
+                  <a href="aboutUs.html">History</a>
+                  <!-- <a href="aboutUs.html">Memories</a> -->
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+        <div id="topVideoBox">
+          <video autoplay muted loop id="topVideo">
+            <source src="videos/StStithiansCollege.mp4" type="video/mp4">
+          </video>
+        </div>
+      </header>
+    <main>
+
+
+        <form action=" http://itins3.madisoncollege.edu/echo.php" method="post">
+            <h1>Schedule a Tour</h1>
+            <hr>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <label for="visitorName">Person Inquiring Name*</label>
+                    <input type="text" name="visitorName" id="visitorName" required>
+                    <label for="phoneNumber">Phone Number*</label>
+                    <input type="tel" name="phone" id="phoneNumber" required>
+
+                </div>
+
+                <div class="contact-right">
+                    <label for="visit-student">Relationship to Student*</label>
+                    <input type="text" name="relashtionship" required id="visit-student">
+
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                </div>
+            </div>
+
+            <div class="txt-box">
+                <label for="info">Applicant Info (FirstName, Last Name, Gender, DoB, Grade Entering):*</label>
+                <textarea id="info" name="info" placeholder="Type here..."></textarea>
+                <label for="vst-aim" class="tellUs">Tell us when would you like to visit PES*</label>
+                <textarea name="vst-aim" id="vst-aim" placeholder="Type here..."></textarea>
+                <button type="submit" class="submitbtn">Request a Tour</button>
+            </div>
+        </form>
+
+    </main>
+
+
+    <footer>
+      <div class="footerLeft">
+          <h2><a href="contactUs.html">Contact us</a></h2>
+          <p>
+              Phone: <a href="tel: +2630242792240">0242-792240</a> <span class="footer-lines">|</span> <a href="tel: +2630242790355">0242-790355</a>
+              <!-- <span class="footer-lines">|</span> 0242-792344 -->
+          </p>
+          <p>
+              Email: <a href="mailto: info@peschool.co.zw">info@peschool.co.zw</a>
+              <span class="footer-lines">|</span> <a href="mailto: headpe@africaonline.co.zw">headpe@africaonline.co.zw</a>
+          </p>
+          <p><address><a href="https://www.google.com/maps/place/Prince+Edward/@-17.8143523,31.0473054,14z/data=!4m6!3m5!1s0x1931a500be740c0f:0x207b48c8ab2a5ff2!8m2!3d-17.8209549!4d31.0349434!16zL20vMGNmOXBj?entry=ttu">Address: P.O. Box CY418, Causeway, Harare, Zimbabwe</a></address></p>
+      </div>
+      <div class="footerRight">
+          <h2>Follow us</h2>
+          <div>
+              <a href="https://twitter.com/Tigers1898">
+                  <img src="assets/twitter_32x32.png" alt="follow our twitter">
+              </a>
+              <a href="https://www.facebook.com/peschoolzw">
+                  <img src="assets/facebook.png" alt="follow our facebook">
+              </a>
+              <a href="https://www.youtube.com/channel/UCjgWEJAN-9gAilc2mTUic7A">
+                  <img src="assets/youtube.png" alt="follow our YouTube">
+              </a>
+          </div>
+      </div>
+  </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

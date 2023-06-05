@@ -1,0 +1,182 @@
+main{
+    width: 100%;
+    height: 60rem;
+    background-image: url(../assets/schoolView.jpeg);
+    background-size: cover; 
+    background-repeat :no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portalBox {
+    width: 58%;
+    height: 30rem;
+    margin: 0 auto;
+    /* padding-top: 10rem; */
+    border-radius: 8px;
+    /* border: 2px solid green; */
+    
+}
+
+ .portal-logo, .login {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    float: left;  
+    box-shadow: 1px 2px 8px 2px lightgray;
+}
+
+.portal-logo {
+    background-color:rgb(163, 23, 30);
+    border-radius: 8px 0 0 8px;
+}
+ figcaption {
+    color: white;
+    font-size: 1.2vm;
+    padding-top: 1rem;
+ }
+
+ .login, form {
+    background-color: beige;
+    border-radius: 0 8px 8px 0;
+    font-size: 1vm;
+ }
+
+ .login h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(163, 23, 30);
+ }
+
+input, label {
+    display: block;
+    
+}
+
+label {
+    padding-bottom: 0.2rem;
+}
+
+figure {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+figure img {
+    width: 5rem;
+   margin: 0 auto;
+   border-radius: 6px;
+    
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+input, label {
+    display: block;
+    padding-top: 1rem;
+    width: 80%;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 2.6rem;
+}
+
+.portal-btn,
+.cancelbtn,
+button[type="submit"] {
+  height: 2.6rem;
+  font-family: inherit;
+}
+
+form {
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+h2 {
+    padding-top: 3rem;
+}  
+
+.portal-btn {
+    background-color: white;
+    color: rgb(163, 23, 30);
+    padding: 10px 18px;
+    margin: 28px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    font-weight: bold;
+  }
+  
+  .portal-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: white;
+    color: rgb(163, 23, 30);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 8px lightgray;
+  }
+  
+  .psw {
+    margin-left: 5px;
+  }
+
+  input, .cancelbtn, button[type="submit"]{
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px 8px lightgray;
+  }
+
+
+  /*----------------------------mobile screen---------------------*/
+@media only screen and (max-width: 800px) {
+
+.portalBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 82%;
+    padding-bottom: 5rem;
+   
+}
+
+.portal-logo, .login{
+    width: 100%;
+    height: 20rem;
+    box-shadow: 1px 3px 8px rgb(17, 12, 12);
+}
+
+.portal-logo {
+    border-radius: 7px 7px 0 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.login {
+    border-radius: 0 0 7px 7px;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+ 
+}
+
+    
