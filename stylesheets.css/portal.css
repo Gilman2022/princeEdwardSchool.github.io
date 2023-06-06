@@ -34,14 +34,14 @@ main{
 }
  figcaption {
     color: white;
-    font-size: 1.2vm;
+    font-size: 1.2rem;
     padding-top: 1rem;
  }
 
  .login, form {
     background-color: beige;
     border-radius: 0 8px 8px 0;
-    font-size: 1vm;
+    font-size: 1rem;
  }
 
  .login h2 {
