@@ -55,7 +55,7 @@ section {
   }
 
 h1,
-legend {
+.section-title {
     text-align: center;
     font-size: 3vw;
     font-weight: bolder;
@@ -152,7 +152,7 @@ legend {
     margin-top: 0;
 }
 
-legend {
+.section-title {
     word-spacing: 1rem;
     animation-name: event-1;
     animation-duration: 6s;
@@ -164,6 +164,7 @@ legend {
     text-align: center;
     margin: 0 auto;
     letter-spacing:0.1rem;
+    width: 22rem;
 }
 
 @keyframes event-1 {
@@ -392,9 +393,6 @@ legend {
     /* height: fit-content; */
 }
 
-#sports legend {
-    border-radius: 0 0 8px 8px;
-}
 
 /* sports images */
 
@@ -560,9 +558,13 @@ li {
       }
 
     h1,
-    legend {
+    .section-title {
         font-size: 1rem;
         letter-spacing: 0.1rem;
+    }
+
+    .section-title {
+        width: 15rem;
     }
 
     #welcome {
@@ -641,9 +643,6 @@ li {
     flex-direction: column;
  }
 
- #academics legend{
-    width: 60%;
- }
 
  .academics-img, .academics-txt, .academics-news {
     padding: 2rem 1rem;
@@ -757,6 +756,5 @@ li {
     height: auto;
     object-fit: cover;
 }
-
 
 }
