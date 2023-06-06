@@ -78,7 +78,7 @@ table {
   border-radius: 8px;
   box-shadow: 1px 2px 8px 2px lightgray;
   height: 0.5vw;
-/*   transform: translateY(-50%); */
+  transform: translateY(-50%);
  
 }
 
@@ -121,7 +121,7 @@ tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 @media only screen and (min-width: 761px)  and (max-width:1030px) {
   table {
     margin-top: 5rem;
-/*     transform: translateY(-30%); */
+    transform: translateY(-30%);
   }
 
   caption {
@@ -152,7 +152,7 @@ tr:nth-child(even) {
 
 @media only screen and (max-width: 760px) {
   table {
-/*     transform: translateY(-16%); */
+    transform: translateY(-16%);
   }
   
 }
