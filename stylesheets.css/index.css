@@ -597,7 +597,9 @@ li {
     width: 100%;
 }
 
-
+#events legend {
+    margin: 0 auto;
+    }
     #events div figure {
         height: 20rem;
     }
