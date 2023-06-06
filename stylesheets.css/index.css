@@ -149,16 +149,21 @@ legend {
 #events {
     width: 100%;
     padding-top: 10rem;
+    margin-top: 0;
 }
 
 legend {
-    word-spacing: 1.2rem;
+    word-spacing: 1rem;
     animation-name: event-1;
     animation-duration: 6s;
     animation-iteration-count: infinite;
     padding: 3rem;
     box-shadow: 1px 1px 10px 5px rgb(176, 176, 176);
     border-radius: 8px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing:0.1rem;
 }
 
 @keyframes event-1 {
@@ -597,11 +602,9 @@ li {
     width: 100%;
 }
 
-#events legend {
-    margin: 0 auto;
-    }
+
     #events div figure {
-        height: 20rem;
+        height: 22rem;
     }
 
     #events div figure img {
@@ -636,6 +639,10 @@ li {
  #academics fieldset {
     display: flex;
     flex-direction: column;
+ }
+
+ #academics legend{
+    width: 60%;
  }
 
  .academics-img, .academics-txt, .academics-news {
